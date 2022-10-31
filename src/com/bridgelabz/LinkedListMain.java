@@ -8,7 +8,7 @@ public class LinkedListMain {
 
 		LinkedList<Integer> linkedList1 = new LinkedList<>();
 
-		linkedList1.add(56);
+		linkedList1.add(57);
 		linkedList1.add(30);
 		linkedList1.add(70);
 
