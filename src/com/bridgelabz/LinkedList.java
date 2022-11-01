@@ -54,6 +54,17 @@ public class LinkedList<T> {
 		secondLast.setNext(null);
 		tail = secondLast;
 		return temp;
+	}
+
+	public Node<T> search(T searchData) {
+		Node<T> temp = head;
+		while (temp != null) {
+			if (temp.getData().equals(searchData)) {
+				return temp;
+			}
+			temp = temp.getNext();
+		}
+		return null;
 
 	}
 }
