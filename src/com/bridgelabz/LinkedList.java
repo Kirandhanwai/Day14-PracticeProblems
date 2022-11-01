@@ -43,6 +43,17 @@ public class LinkedList<T> {
 		T temp = head.getData();
 		head = head.getNext();
 		return temp;
+	}
+
+	public T popLast() {
+		T temp = tail.getData();
+		Node<T> secondLast = head;
+		while (secondLast.getNext() != tail) {
+			secondLast = secondLast.getNext();
+		}
+		secondLast.setNext(null);
+		tail = secondLast;
+		return temp;
 
 	}
 }
